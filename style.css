@@ -14,7 +14,7 @@ body {
 
 main {
   display: flex;
-  gap: 19rem; 
+  gap: 19rem;
 
   text-align: center;
   align-items: center;
@@ -68,4 +68,24 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 56.25rem) {
 
+  main {
+    gap: 9rem;
+    margin: 10rem auto .5rem auto;
+    padding: .9rem;
+  }
+}
+
+
+@media (max-width: 51.875rem) {
+  main {
+    flex-direction: column;
+    gap: 5rem;
+    margin: .2rem auto .5rem auto
+  }
+
+  .timer {
+    margin-bottom: 2rem;
+  }
+}
