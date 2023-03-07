@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  gap: 19rem; 
+
+  text-align: center;
+  align-items: center;
+
+  margin: 10rem auto;
+  max-width: 82.1rem;
+  width: 90%;
+}
+
+.timer {
+  display: flex;
+  margin-bottom: 4rem;
+
+  font-size: 12.6rem;
+  font-weight: 500;
+  line-height: 14.8rem;
+}
+
+.comands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.comands svg button:hover {
+  color: aqua;
+}
+
+.structure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 32.1rem;
+}
+
+.focus-song {
+  max-width: 30.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  gap: 3.2rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
