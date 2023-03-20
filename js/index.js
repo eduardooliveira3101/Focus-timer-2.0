@@ -12,6 +12,11 @@ const cardRain = document.querySelector('.rain')
 const cardCoffe = document.querySelector('.coffe')
 const cardFireplace = document.querySelector('.fireplace')
 
+const svgFlorest = document.querySelector('.svg-florest')
+const svgRain = document.querySelector('.svg-rain')
+const svgCoffe = document.querySelector('.svg-coffe')
+const svgFirePlace = document.querySelector('.svg-fireplace')
+
 const sound = sounds()
 
 const timerfeatures = timerFeatures({
@@ -35,7 +40,6 @@ buttonDecreaseTime.addEventListener('click', function () {
 buttonStop.addEventListener('click', function() {
   timerfeatures.pause()
   timerfeatures.StopThemesCards()
-
 })
 
 buttonStop.addEventListener('dblclick', function() {
@@ -54,6 +58,7 @@ cardRain.addEventListener('click', function() {
   sound.coffeeShop.pause()
   sound.firePlace.pause()
   sound.florest.pause()
+
 })
 
 cardCoffe.addEventListener('click', function() {
@@ -69,6 +74,11 @@ cardFireplace.addEventListener('click', function() {
   sound.coffeeShop.pause()
   sound.rain.pause()
   sound.florest.pause()
+
+
+  svgFirePlace.classList.add('selected')
+  cardFireplace.classList.add('selected')
 })
+
 
 

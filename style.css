@@ -40,10 +40,6 @@ main {
   gap: 4rem;
 }
 
-.comands svg button:hover {
-  color: aqua;
-}
-
 .structure {
   display: flex;
   flex-direction: column;
@@ -66,6 +62,54 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.florest,
+.rain,
+.coffe,
+.fireplace {
+  background: #E1E1E6;
+  border-radius: 4rem;
+}
+
+.play,
+.stop,
+.sum,
+.sub {
+  transition: 200ms;
+}
+
+.play:hover,
+.stop:hover,
+.sum:hover,
+.sub:hover {
+  transform: scale(1.1);
+}
+
+.florest:hover,
+.rain:hover,
+.coffe:hover,
+.fireplace:hover {
+  transform: scale(1.1);
+}
+
+.florest svg,
+.rain svg,
+.coffe svg,
+.fireplace svg {
+  transition: 300ms;
+}
+
+.florest svg:hover,
+.rain svg:hover,
+.coffe svg:hover,
+.fireplace svg:hover {
+  transform: scale(1.1);
+}
+
+.selected {
+  fill: white;
+  background: #02799D;
 }
 
 @media (max-width: 56.25rem) {
