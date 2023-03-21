@@ -107,9 +107,24 @@ button {
   transform: scale(1.1);
 }
 
-.selected {
+.selectedOne {
+  fill: white;
+  background: #019d03;
+}
+
+.selectedTwo {
   fill: white;
   background: #02799D;
+}
+
+.selectedThree {
+  fill: white;
+  background: #dfd931;
+}
+
+.selectedFour {
+  fill: white;
+  background: #e96304;
 }
 
 @media (max-width: 56.25rem) {

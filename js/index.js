@@ -47,37 +47,84 @@ buttonStop.addEventListener('dblclick', function() {
 } )
 
 cardFlorest.addEventListener('click', function() {
+
   sound.florest.play()
+  svgFlorest.classList.add('selectedOne')
+  cardFlorest.classList.add('selectedOne')
+
   sound.rain.pause()
+  svgRain.classList.remove('selectedTwo')
+  cardRain.classList.remove('selectedTwo')
+  
   sound.coffeeShop.pause()
+  svgCoffe.classList.remove('selectedThree')
+  cardCoffe.classList.remove('selectedThree')
+
   sound.firePlace.pause()
+  svgFirePlace.classList.remove('selectedFour')
+  cardFireplace.classList.remove('selectedFour')
+
 })
 
 cardRain.addEventListener('click', function() {
+
   sound.rain.play()
+  svgRain.classList.add('selectedTwo')
+  cardRain.classList.add('selectedTwo')
+
   sound.coffeeShop.pause()
+  svgCoffe.classList.remove('selectedThree')
+  cardCoffe.classList.remove('selectedThree')
+
   sound.firePlace.pause()
+  svgFirePlace.classList.remove('selectedFour')
+  cardFireplace.classList.remove('selectedFour')
+
   sound.florest.pause()
+  svgFlorest.classList.remove('selectedOne')
+  cardFlorest.classList.remove('selectedOne')
 
 })
 
 cardCoffe.addEventListener('click', function() {
+
   sound.coffeeShop.play()
+  svgCoffe.classList.add('selectedThree')
+  cardCoffe.classList.add('selectedThree')
+
   sound.rain.pause()
+  svgRain.classList.remove('selectedTwo')
+  cardRain.classList.remove('selectedTwo')
+
+
   sound.firePlace.pause()
+  svgFirePlace.classList.remove('selectedFour')
+  cardFireplace.classList.remove('selectedFour')
+
   sound.florest.pause()
+  svgFlorest.classList.remove('selectedOne')
+  cardFlorest.classList.remove('selectedOne')
 
 })
 
 cardFireplace.addEventListener('click', function() {
+
   sound.firePlace.play()
+  svgFirePlace.classList.add('selectedFour')
+  cardFireplace.classList.add('selectedFour')
+
   sound.coffeeShop.pause()
+  svgCoffe.classList.remove('selectedThree')
+  cardCoffe.classList.remove('selectedThree')
+
   sound.rain.pause()
+  svgRain.classList.remove('selectedTwo')
+  cardRain.classList.remove('selectedTwo')
+
   sound.florest.pause()
+  svgFlorest.classList.remove('selectedOne')
+  cardFlorest.classList.remove('selectedOne')
 
-
-  svgFirePlace.classList.add('selected')
-  cardFireplace.classList.add('selected')
 })
 
 
