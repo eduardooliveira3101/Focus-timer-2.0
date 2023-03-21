@@ -60,7 +60,7 @@ function countdown() {
     }
 
     if (seconds <= 0) {
-      seconds = 60
+      seconds = 61
         --minutes
     }
 
