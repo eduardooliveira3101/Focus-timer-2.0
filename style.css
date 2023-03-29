@@ -8,6 +8,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
 :root {
   font-size: 62.5%;
 }
@@ -18,8 +22,9 @@ main {
 
   text-align: center;
   align-items: center;
+  height: 100vh;
 
-  margin: 10rem auto;
+  margin-inline: auto;
   max-width: 82.1rem;
   width: 90%;
 }
@@ -64,11 +69,35 @@ button {
   cursor: pointer;
 }
 
+button input {
+  position: absolute;
+  width: 9rem;
+  left: 2rem;
+  bottom: 2rem;
+}
+
+[type="range"]{
+
+  -webkit-appearance: none;
+  background-color: black;
+  border-radius:99rem;
+  height: 0.4rem;
+}
+
+.focus-song input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 99rem;
+  background-color: black;
+}
+
 .florest,
 .rain,
 .coffe,
 .fireplace {
   background: #E1E1E6;
+  position: relative;
   border-radius: 4rem;
 }
 
@@ -126,6 +155,52 @@ button {
   fill: white;
   background: #e96304;
 }
+
+.light,
+.dark {
+  position: absolute;
+  right: 5rem;
+  top: 2rem
+}
+
+.dark-mode {
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+.dark-mode .florest,
+.dark-mode .rain,
+.dark-mode .coffe,
+.dark-mode .fireplace {
+  background: #29292E;
+  position: relative;
+  border-radius: 4rem;
+}
+
+.dark-mode [type="range"]{
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  border-radius:99rem;
+  height: 0.4rem;
+}
+
+.dark-mode .focus-song input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 99rem;
+  background-color: #ffffff;
+}
+
+.dark-mode span {
+  color: white;
+}
+
+.comands svg {
+  fill: white;
+}
+
 
 @media (max-width: 56.25rem) {
 

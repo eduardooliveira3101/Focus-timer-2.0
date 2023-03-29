@@ -17,12 +17,19 @@ const svgRain = document.querySelector('.svg-rain')
 const svgCoffe = document.querySelector('.svg-coffe')
 const svgFirePlace = document.querySelector('.svg-fireplace')
 
+const body = document.querySelector('body')
+const light = document.querySelector('.light')
+
 const sound = sounds()
 
 const timerfeatures = timerFeatures({
   displayMinutes, 
   displaySeconds, 
   sound
+})
+
+light.addEventListener('click' , function () {
+  body.classList.add('dark')
 })
 
 buttonPlay.addEventListener('click', function () {
