@@ -12,13 +12,13 @@ const cardRain = document.querySelector('.rain')
 const cardCoffe = document.querySelector('.coffe')
 const cardFireplace = document.querySelector('.fireplace')
 
+const light = document.querySelector('.light')
+const dark = document.querySelector('.dark')
+
 const svgFlorest = document.querySelector('.svg-florest')
 const svgRain = document.querySelector('.svg-rain')
 const svgCoffe = document.querySelector('.svg-coffe')
 const svgFirePlace = document.querySelector('.svg-fireplace')
-
-const body = document.querySelector('body')
-const light = document.querySelector('.light')
 
 const sound = sounds()
 
@@ -28,8 +28,14 @@ const timerfeatures = timerFeatures({
   sound
 })
 
-light.addEventListener('click' , function () {
-  body.classList.add('dark')
+light.addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode')
+  dark.classList.toggle('hide')
+})
+
+dark.addEventListener('click', function(){
+  document.body.classList.remove('dark-mode')
+  dark.classList.toggle('hide')
 })
 
 buttonPlay.addEventListener('click', function () {

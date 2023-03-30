@@ -76,15 +76,15 @@ button input {
   bottom: 2rem;
 }
 
-[type="range"]{
+[type="range"] {
 
   -webkit-appearance: none;
   background-color: black;
-  border-radius:99rem;
+  border-radius: 99rem;
   height: 0.4rem;
 }
 
-.focus-song input::-webkit-slider-thumb{
+.focus-song input::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 1.6rem;
   height: 1.6rem;
@@ -99,6 +99,7 @@ button input {
   background: #E1E1E6;
   position: relative;
   border-radius: 4rem;
+  fill: #323238;
 }
 
 .play,
@@ -164,9 +165,7 @@ button input {
 }
 
 .dark-mode {
-  height: 100%;
-  width: 100%;
-  background: black;
+  background-color: #000;
 }
 
 .dark-mode .florest,
@@ -178,14 +177,21 @@ button input {
   border-radius: 4rem;
 }
 
-.dark-mode [type="range"]{
+.dark-mode button .svg-florest,
+.dark-mode button .svg-rain,
+.dark-mode button .svg-coffe,
+.dark-mode button .svg-fireplace {
+  fill: rgb(194, 193, 193);
+}
+
+.dark-mode [type="range"] {
   -webkit-appearance: none;
   background-color: #ffffff;
-  border-radius:99rem;
+  border-radius: 99rem;
   height: 0.4rem;
 }
 
-.dark-mode .focus-song input::-webkit-slider-thumb{
+.dark-mode .focus-song input::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 1.6rem;
   height: 1.6rem;
@@ -197,29 +203,43 @@ button input {
   color: white;
 }
 
-.comands svg {
+.dark-mode .selectedOne {
   fill: white;
+  background: #003801;
 }
 
+.dark-mode .selectedTwo {
+  fill: white;
+  background: #012c39;
+}
+
+.dark-mode .selectedThree {
+  fill: white;
+  background: #454303;
+}
+
+.dark-mode .selectedFour {
+  fill: white;
+  background: #5e2e01;
+}
 
 @media (max-width: 56.25rem) {
 
   main {
     gap: 9rem;
-    margin: 10rem auto .5rem auto;
+    margin: .5rem auto .5rem auto;
     padding: .9rem;
   }
 }
-
 
 @media (max-width: 51.875rem) {
   main {
     flex-direction: column;
     gap: 5rem;
-    margin: .2rem auto .5rem auto
+    margin: 10rem auto 10rem auto
   }
 
   .timer {
     margin-bottom: 2rem;
   }
-} 
+}
