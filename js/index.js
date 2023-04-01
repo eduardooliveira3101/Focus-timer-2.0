@@ -1,24 +1,31 @@
 import sounds from './sound.js'
 import timerFeatures from './timer_features.js'
 
+const light = document.querySelector('.light')
+const dark = document.querySelector('.dark')
+
 const buttonPlay = document.querySelector('.play')
 const buttonIncreaseTime = document.querySelector('.sum')
 const buttonDecreaseTime = document.querySelector('.sub')
 const buttonStop = document.querySelector('.stop')
+
 const displayMinutes = document.querySelector('.minutes')
 const displaySeconds = document.querySelector('.seconds')
+
 const cardFlorest = document.querySelector('.florest')
 const cardRain = document.querySelector('.rain')
 const cardCoffe = document.querySelector('.coffe')
 const cardFireplace = document.querySelector('.fireplace')
 
-const light = document.querySelector('.light')
-const dark = document.querySelector('.dark')
-
 const svgFlorest = document.querySelector('.svg-florest')
 const svgRain = document.querySelector('.svg-rain')
 const svgCoffe = document.querySelector('.svg-coffe')
 const svgFirePlace = document.querySelector('.svg-fireplace')
+
+const volFlorest = document.querySelector('.volFlorest')
+const volRain = document.querySelector('.volRain')
+const volCoffe = document.querySelector('.volCoffe')
+const volFirePlace = document.querySelector('.volFirePlace')
 
 const sound = sounds()
 
@@ -138,6 +145,22 @@ cardFireplace.addEventListener('click', function() {
   svgFlorest.classList.remove('selectedOne')
   cardFlorest.classList.remove('selectedOne')
 
+})
+
+volFlorest.addEventListener('input', () => {
+  sound.florest.volume = volFlorest.value / 100
+})
+
+volRain.addEventListener('input', () => {
+  sound.rain.volume = volRain.value / 100
+})
+
+volCoffe.addEventListener('input', () => {
+  sound.coffeeShop.volume = volCoffe.value / 100
+})
+
+volFirePlace.addEventListener('input', () => {
+  sound.firePlace.volume = volFirePlace.value / 100
 })
 
 
