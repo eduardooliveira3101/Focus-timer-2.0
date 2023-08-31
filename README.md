@@ -10,7 +10,7 @@ Um temporizador para concentração que é a ferramenta ideal para ajudar você 
 ## Origem
 Projeto realizado através do desafio Explorer da Rocketseat, aulas ministradas por Mayk Brito
 
-## Screenshots
+## Interface
 ![App Screenshot](./assets/Lightmode.png)
 ![App Screenshot](./assets/Darkmode.png)
 ![App Screenshot](./assets/temaFlorestaLight.png)
