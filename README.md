@@ -17,7 +17,11 @@ Um temporizador para concentração que é a ferramenta ideal para ajudar você 
 
 
 ## Origem
-Projeto realizado através do desafio Explorer, aulas ministradas por Mayk Brito
+Projeto realizado através do desafio Explorer da Rocketseat, aulas ministradas por Mayk Brito
+
+## Screenshots
+
+
 
 
 ![Logo](./assets/e-removebg-preview.png)
