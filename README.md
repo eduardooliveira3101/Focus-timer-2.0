@@ -22,5 +22,4 @@ Projeto realizado através do desafio Explorer da Rocketseat, aulas ministradas 
 ![App Screenshot](./assets/temFogueiraLight.png)
 ![App Screenshot](./assets/temFogueiraDark.png)
 
-![Logo](./assets/e-removebg-preview.png)
 
